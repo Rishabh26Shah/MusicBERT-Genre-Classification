@@ -232,29 +232,5 @@ This repository includes:
 
 All relevant references and licenses (MIT License) from the original MusicBERT repo are maintained in this implementation.
 
-## 8. Presentation
-
-This project was presented as part of a final course deliverable. The goal was to demonstrate the adaptation of the MusicBERT model for genre classification on symbolic music data using the TOPMAGD dataset.
-
-### Organization & Clarity
-The presentation walked through:
-- The core problem of genre classification
-- Why symbolic music is suitable for MusicBERT
-- How the model was adapted and trained
-- Key configuration choices and challenges faced
-
-### Visual Aids & Demonstrations
-- Visuals showing MusicBERT architecture and OctupleMIDI encoding
-- Training progress and validation performance snapshots
-- Code walk-through of training and preprocessing scripts
-
-### Delivery & Engagement
-- Clear explanation of model setup, training, and evaluation
-- Addressed project motivation and MusicBERT’s relevance to symbolic music
-
-### Preparation & Professionalism
-- Structured and timed presentation
-- Visuals and examples were prepared beforehand
-- All aspects of the rubric were covered
 
 
