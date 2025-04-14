@@ -60,7 +60,7 @@ Training configuration:
 
 The model was saved using **validation accuracy** as the metric, not loss.
 
-## 3. Implementation & Demo
+## 3. Implementation 
 
 This project builds upon the official [MusicBERT](https://github.com/microsoft/muzic/tree/main/MusicBERT) codebase, adapting it for symbolic music genre classification using the TOPMAGD dataset within the Fairseq framework.
 
