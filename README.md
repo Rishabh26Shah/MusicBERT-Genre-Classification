@@ -72,9 +72,12 @@ Clone the repository and set up a Python virtual environment:
 git clone https://github.com/microsoft/muzic.git
 cd muzic/MusicBERT
 
+pyenv install 3.8.18  
+pyenv local 3.8.18
 python -m venv musicbert38
 source musicbert38/bin/activate
 
+pip install -r requirements.txt
 pip install torch fairseq
 ```
 
