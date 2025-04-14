@@ -143,8 +143,24 @@ fairseq-train bin_data_genre \
   --max-epoch 10 \
   --log-interval 10
 ```
+## 4. Assessment & Evaluation
 
-## 4. Model & Data Cards
+The model was evaluated on a validation set using metrics tailored for multi-label classification. These include both threshold-based and ranking-based scores to capture the nuances of genre prediction from symbolic music data.
+
+**Key Evaluation Metrics:**
+- **Accuracy**: Measures the proportion of correctly predicted genre labels.
+- **F1 Score (Micro, Macro, Weighted)**: Evaluates the balance between precision and recall across genres, which is especially important given the class imbalance.
+- **ROC AUC (Micro)**: Assesses the model’s ability to rank correct genre labels higher than incorrect ones across all samples.
+
+**Best Performance:**
+- **Accuracy**: 61.4%
+- **ROC AUC (Micro)**: 0.8756
+- **F1 Score (Micro)**: 0.6132
+
+**What this means**:  
+The model was able to correctly identify the relevant genres for around 61% of the samples. The high ROC AUC (micro) indicates that even when predictions weren’t perfectly aligned, the model was still consistently ranking correct genres above incorrect ones. The F1 scores further show balanced performance across precision and recall, despite genre imbalance. The saved checkpoint corresponds to the highest accuracy during validation.
+
+## 5. Model & Data Cards
 
 ### Model Information
 
@@ -179,7 +195,7 @@ This version is suited for fine-tuning on genre classification and other symboli
 
 The implementation is research-oriented and not intended for commercial deployment without additional fairness or robustness evaluation.
 
-## 5. Critical Analysis
+## 6. Critical Analysis
 
 This project investigates the use of MusicBERT for symbolic music genre classification. MusicBERT is a transformer-based model pretrained using masked modeling on a large symbolic music dataset with structural encoding and bar-level masking. The main goal was to fine-tune it for a downstream task and evaluate its ability to transfer knowledge.
 
@@ -196,22 +212,6 @@ Possible future directions include:
 - Applying this setup to other tasks such as mood classification or composer identification
 - Combining symbolic input with audio features in a hybrid model
 
-## 6. Assessment & Evaluation
-
-The model was evaluated on a validation set using metrics tailored for multi-label classification. These include both threshold-based and ranking-based scores to capture the nuances of genre prediction from symbolic music data.
-
-**Key Evaluation Metrics:**
-- **Accuracy**: Measures the proportion of correctly predicted genre labels.
-- **F1 Score (Micro, Macro, Weighted)**: Evaluates the balance between precision and recall across genres, which is especially important given the class imbalance.
-- **ROC AUC (Micro)**: Assesses the model’s ability to rank correct genre labels higher than incorrect ones across all samples.
-
-**Best Performance:**
-- **Accuracy**: 61.4%
-- **ROC AUC (Micro)**: 0.8756
-- **F1 Score (Micro)**: 0.6132
-
-**What this means**:  
-The model was able to correctly identify the relevant genres for around 61% of the samples. The high ROC AUC (micro) indicates that even when predictions weren’t perfectly aligned, the model was still consistently ranking correct genres above incorrect ones. The F1 scores further show balanced performance across precision and recall, despite genre imbalance. The saved checkpoint corresponds to the highest accuracy during validation.
 
 ## 7. Documentation & Resource Links
 
