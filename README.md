@@ -160,6 +160,15 @@ The model was evaluated on a validation set using metrics tailored for multi-lab
 **What this means**:  
 The model was able to correctly identify the relevant genres for around 61% of the samples. The high ROC AUC (micro) indicates that even when predictions weren’t perfectly aligned, the model was still consistently ranking correct genres above incorrect ones. The F1 scores further show balanced performance across precision and recall, despite genre imbalance. The saved checkpoint corresponds to the highest accuracy during validation.
 
+### Note on Results
+
+While MusicBERT has shown strong performance on various symbolic music understanding tasks, in this implementation the fine-tuned genre classification model achieved performance **slightly below** the reported baseline.
+
+Specifically, the validation F1 score was **~0.01 lower** than the baseline in the original MusicBERT paper. This may be due to several factors, including differences in preprocessing, smaller training budget, lack of full hyperparameter tuning, or resource constraints during fine-tuning.
+
+Despite this, the model still demonstrated consistent learning behavior and was able to capture genre-relevant information from symbolic sequences. Further tuning or longer training could likely help close this small performance gap.
+
+
 ## 5. Model & Data Cards
 
 ### Model Information
