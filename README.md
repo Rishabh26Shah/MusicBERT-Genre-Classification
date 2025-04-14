@@ -157,7 +157,7 @@ The model was evaluated on a validation set using metrics tailored for multi-lab
 - **ROC AUC (Micro)**: 0.8756
 - **F1 Score (Micro)**: 0.6132
 
-  <img src="https://raw.githubusercontent.com/Rishabh26Shah/MusicBERT-Genre-Classification/main/Score.png" width="800"/>
+  <img src="https://raw.githubusercontent.com/Rishabh26Shah/MusicBERT-Genre-Classification/main/Score2.png" width="800"/>
 
 
 **What this means**:  
