@@ -157,6 +157,9 @@ The model was evaluated on a validation set using metrics tailored for multi-lab
 - **ROC AUC (Micro)**: 0.8756
 - **F1 Score (Micro)**: 0.6132
 
+  <img src="https://raw.githubusercontent.com/Rishabh26Shah/MusicBERT-Genre-Classification/main/Score.png" width="800"/>
+
+
 **What this means**:  
 The model was able to correctly identify the relevant genres for around 61% of the samples. The high ROC AUC (micro) indicates that even when predictions weren’t perfectly aligned, the model was still consistently ranking correct genres above incorrect ones. The F1 scores further show balanced performance across precision and recall, despite genre imbalance. The saved checkpoint corresponds to the highest accuracy during validation.
 
